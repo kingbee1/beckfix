@@ -1,0 +1,229 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.banner{
+	height: 100vh;
+	position: relative;
+}
+
+.slider{
+	width: 93%;
+	float: left;
+	height: 100%;
+}
+
+#slider, .carousel-inner, .carousel-item, .carousel-item img{
+		height: 100%;
+	}
+
+.carousel-caption{
+	max-height: 350px !important;
+	max-width: 500px !important;
+	text-align: right !important;
+	right: 60px !important;
+	left: auto !important;
+	top: 160px !important;
+}
+
+.carousel-caption h1{
+	font-size: 70px;
+}
+
+.carousel-caption p{
+	margin-top: 40px;
+}
+
+.side-menu{
+	height: 100%;
+	width: 7%;
+	float: right;
+	background-color: #023C8E; 
+/*	023C8E*/ /*064db5, 204C57*/
+	position: relative;
+	z-index: 2;
+}
+
+.menu-icon{
+	width: 40px;
+	margin: 25px;
+	cursor: pointer;
+}
+
+.search-icon{
+	width: 30px;
+	margin: 30px;
+	cursor: pointer;
+}
+
+.side-menu::after{
+	content: '';
+	width: 1px;
+	height: 130px;
+	background: white;
+	left: 45px;
+	top: 200px;
+	position: absolute;
+
+}
+
+.carousel-indicators{
+	left: 85% !important;
+	height: 40% !important;
+	width: 95px !important;
+	top: 55% !important;
+	display: block !important;
+	color: white;
+}
+
+.carousel-indicators li{
+	width: 10px !important;
+	height: 10px !important;
+	border-radius: 50% !important;
+	margin-left: 40px !important;
+	margin-top: 15px !important;
+	background: transparent !important;
+	border: 2px solid white !important;
+}
+
+.share{
+	margin-top: 60px;
+	margin-left: 15px;
+}
+
+.share img{
+	width: 20px;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.top-bar{
+	position: absolute;
+	margin: 30px 50px;
+	z-index: 2;
+}
+
+.top-bar img{
+	height: 30px;
+	cursor: pointer;
+}
+
+.top-bar ul{
+	display: inline-flex;
+}
+
+.top-bar ul li{
+	list-style: none;
+	margin: 15px 20px;
+}
+
+.top-bar ul li a{
+	color: white;
+	display: block;
+	padding-top: 5px;
+}
+
+.social-icons{
+	top: 35%;
+	left: 5%;
+	position: absolute;
+	z-index: 2;
+}
+
+.social-icons ul li{
+	list-style: none;
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+.social-icons ul li a{
+	color: white !important;
+}
+
+@media only screen and (max-width: 980px){
+	.side-menu{
+		width: 12%;
+		float: right;
+		background-color: #023C8E;
+		position: relative;
+		z-index: 2;
+	}
+
+	.slider{
+		width: 88%;
+	}
+
+	.top-bar{
+		position: absolute;
+		margin: 10px 15px;
+		z-index: 2;
+	}
+
+	.carousel-caption h1{
+		font-size: 35px;
+	}
+
+	.carousel-caption p{
+		margin-top: 25px;
+		text-align: right;
+	}
+
+	#slider, .carousel-inner, .carousel-item, .carousel-item img{
+		height: 100%;
+	}
+
+	.social-icons{
+		top: 18%;
+		left: 1%;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.top-bar ul li a{
+		color: white;
+		font-size: 15px; 
+		display: block;
+		padding-top: 5px;
+	}
+
+	.carousel-indicators{
+		left: 81% !important;
+		height: 40% !important;
+		width: 95px !important;
+		top: 55% !important;
+		display: block !important;
+		color: white;
+	}
+
+	.menu-icon{
+		margin-left: 13px;
+	}
+
+	.side-menu::after {
+	    content: '';
+	    width: 1px;
+	    height: 117px;
+	    background: white;
+	    left: 30px;
+	    top: 200px;
+	    position: absolute;
+	}	
+
+	.search-icon {
+	    width: 34px;
+	    margin: 30px;
+	    cursor: pointer;
+	    margin-left: 14px;
+	}
+}
+
+	.share img {
+	    width: 20px;
+	    margin-left: 21px;
+	    cursor: pointer;
+	}
